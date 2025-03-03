@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Section Display */
+.section {
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+
+.section:target {
+  display: block;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Hide active class when another section is targeted */
+.section:target ~ .section.active {
+  display: none;
+}
+
+/* Home Section */
+.bg-container {
+  background-image: url("https://c1.wallpaperflare.com/preview/103/730/506/temple-hindu-hindu-temple-mah%C3%A9.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.tourism-card {
+  background-color: #00ffff;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  background-color: #25b1cc;
+  width: 138px;
+  height: 36px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  line-height: 36px;
+}
+
+.button:hover {
+  background-color: #1a8a9d;
+  transform: scale(1.05);
+}
+
+/* Favourite Places Section */
+.favourite-places-bg-container {
+  background-image: url("https://c1.wallpaperflare.com/preview/103/730/506/temple-hindu-hindu-temple-mah%C3%A9.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+}
+
+.favourite-places-heading {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.favourite-place-card-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.favourite-place-card-container:hover {
+  transform: translateY(-5px);
+}
+
+.favourite-place-card-text-container {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.favourite-place-card-heading {
+  color: #0f0e46;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.favourite-place-card-description {
+  color: #6c6b70;
+  font-size: 13px;
+}
+
+.favourite-place-card-image {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Detailed View Sections */
+.detailed-view-bg-container {
+  background-image: url("https://c1.wallpaperflare.com/preview/103/730/506/temple-hindu-hindu-temple-mah%C3%A9.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 24px;
+}
+
+.detailed-view-heading {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 24px;
+}
+
+.detailed-view-card-container {
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 24px 24px;
+  overflow: hidden;
+}
+
+.detailed-view-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.detailed-view-card-text-container {
+  padding: 16px;
+}
+
+.detailed-view-card-heading {
+  color: #0f0e46;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detailed-view-card-description {
+  color: #6c6b70;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Back Button */
+.back-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
+
+.back-arrow {
+  margin-right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 24px;
+  }
+  
+  .paragraph {
+    font-size: 16px;
+  }
+  
+  .favourite-places-heading {
+    font-size: 24px;
+  }
+  
+  .favourite-place-card-heading {
+    font-size: 20px;
+  }
+  
+  .detailed-view-heading {
+    font-size: 24px;
+  }
+  
+  .detailed-view-card-heading {
+    font-size: 20px;
+  }
+}
