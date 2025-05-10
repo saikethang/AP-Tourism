@@ -18,3 +18,7 @@ This is a tourism website showcasing three famous Hindu temples in Andhra Prades
 1. Clone the repository:
    ```bash
    git clone https://github.com/saikethang/AP-Tourism.git
+
+## Screenshot
+![Screenshot (44)](https://github.com/user-attachments/assets/7747529b-2cf3-4710-8498-29c12ea59400)
+![Screenshot (45)](https://github.com/user-attachments/assets/e61b1767-8dbb-49fb-8716-88cf8312e27a)
